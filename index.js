@@ -95,7 +95,7 @@ app.post('/webhook', (req, res) => {
 
     if (atts) {
       // We received an attachment
-
+      console.log("Message from Facebook: " + msg);
       // Let's reply with an automatic message
       FB.fbMessage(
         sender,
